@@ -1,0 +1,21 @@
+{
+    "name": "my-garage",
+    "authors": [
+        "titus-choi"
+    ],
+    "description": "MYGarage",
+    "main": "dist/index.js",
+    "keywords": [
+        "my-garage",
+        "google",
+        "twitter"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "private": true
+}
