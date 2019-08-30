@@ -2,8 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Radio from "@material-ui/core/Radio";
 
-// ModalForm is a generic component. It is blind to the types of object passed to it, which means that any
-// object can use this component, with a few restrictions.
+// ModalForm is a generic component, with a few restrictions.
 // To call this component, the following parameters are used:
 // Object           - The object who's fields will be displayed in the form.
 // onCancel         - A callback to a parent method that hides the modal form.
@@ -12,10 +11,6 @@ import Radio from "@material-ui/core/Radio";
 // onSend           - A callback to a parent method that sends the HTTP request on submission of the form.
 // formType         - "add", "edit", or "delete". Determines how to render the form
 // formTitle        - The desired title to be displayed on the top of the form.
-// NOTE: this component will only render and interact with object properties that are capitalized. This
-//       allows the component to distinguish what data is important in the object.
-//       your objects may have  other properties, (e.g., index, if it's in a list), but these will be
-//       ignored.
 
 class ModalForm extends React.Component {
   static propTypes = {
